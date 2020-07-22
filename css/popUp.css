@@ -1,0 +1,92 @@
+/* Register Pop Up */
+
+.modal-custom {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: none;
+    border-radius: 22px;
+    outline: none;
+    z-index: 10;
+    background-color: #C1BABB;
+    width: 60%;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 0 30px;
+}
+
+.modal-custom.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header-custom {
+    padding: 0px 50px;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.modal-header-custom .modal-title-custom {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+}
+
+.modal-body-custom {
+    padding: 20px 38px;
+    padding-bottom: 50px;
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.modal-body-custom span {
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.modal-custom > #modal-close-custom {
+    border: none;
+    width: 50%;
+    max-width: 270px;
+    min-width: 120px;
+    background-color: #262424;
+    color: white;
+    outline: none;
+    margin: 10px 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    padding: 0px 30px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#overlay-custom {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay-custom.active {
+    pointer-events: all;
+    opacity: 1;
+}
